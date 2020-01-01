@@ -1,0 +1,30 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: wordpress
+  namespace: blog
+spec:
+  type: ClusterIP
+  selector:
+    app: wordpress
+  ports:
+  - name: http
+    port: 80
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: wordpress-ingress
+  namespace: blog
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  rules:
+  - host: blog.kongs.info
+    http:
+      paths:
+      - backend:
+          serviceName: wordpress
+          servicePort: 80    

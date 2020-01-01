@@ -1,0 +1,1 @@
+while true; do wget -q -O- http://vps:30890; done

@@ -1,0 +1,57 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: svc1
+  namespace: v2ray
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: svc1
+  template:
+    metadata:
+      labels:
+        app: svc1
+    spec:
+      containers:
+      - name: svc1
+        image: cnych/example-web-service
+        env:
+        - name: APP_SVC
+          value: svc1
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  labels:
+    app: svc1
+  name: svc1
+  namespace: v2ray
+spec:
+  type: ClusterIP
+  ports:
+  - port: 8080
+    name: http
+  selector:
+    app: svc1
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: example-web-app
+  namespace: v2ray
+  annotations:
+    kubernetes.io/ingress.class: "traefik"
+spec:
+  rules:
+  - host: example.kongs.info
+    http:
+      paths:
+      - backend:
+          serviceName: svc1
+          servicePort: 8080
