@@ -1,4 +1,4 @@
-node('k8s-jnlp') {
+node('kong-jnlp') {
     stage('Clone') {
         echo "1. Clone stage"
     }
