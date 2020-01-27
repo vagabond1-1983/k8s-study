@@ -1,0 +1,9 @@
+node('k8s-jnlp') {
+    stage('Clone') {
+        echo "1. Clone stage"
+    }
+
+    stage('Test') {
+        echo "2. Test stage"
+    }
+}
