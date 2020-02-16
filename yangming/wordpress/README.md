@@ -1,4 +1,5 @@
 # 安装wordpress应用
+通过创建wordpress应用的过程，练习deployment类型应用的创建过程，及如何升级为域名访问和HPA的过程。
 ## 创建mysql数据库
 - 创建新的namespace
 ```shell
