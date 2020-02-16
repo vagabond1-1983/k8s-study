@@ -1,6 +1,6 @@
 # [跟着阳明老师学习k8s](https://www.qikqiak.com/k8s-book/)
 ## [安装一个单节点的k8s集群](Install-Single-Cluster.md)
-## 创建一个wordpress网站
+## [创建一个wordpress网站](wordpress/README.md)
 ## k8s特性
 - initContainer
 - hook
