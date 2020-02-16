@@ -103,6 +103,7 @@ kubectl create -f wordpress-svc-ingresss.yaml
 source test-hpa.sh
 ```
 这个脚本会一直访问wordpress应用
+
 查看hpa资源
 ```shell
 kubectl get hpa -n blog

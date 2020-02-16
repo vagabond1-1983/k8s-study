@@ -3,7 +3,7 @@
 ## k8s特性
 - [initContainer](initContainer/init-demo.yaml)
 - [hook](hook/postStart.yaml)
-- ingress
+- [ingress](ingress)
 ## [创建一个wordpress网站](wordpress)
 ## prometheus
 ## grafana
