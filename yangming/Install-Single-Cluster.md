@@ -1,7 +1,8 @@
 # 安装单节点k8s集群
-网上有很多使用kubeadm安装k8s单集群的例子，我这里不做赘述，列出主要的步骤
-建议用这篇文章做参考，我是看文章之前搭建的环境，有点乱。
-https://www.qikqiak.com/k8s-book/docs/16.%E7%94%A8%20kubeadm%20%E6%90%AD%E5%BB%BA%E9%9B%86%E7%BE%A4%E7%8E%AF%E5%A2%83.html
+网上有很多使用kubeadm安装k8s单集群的例子，我这里不做赘述，列出主要的步骤。
+建议用[这篇文章](https://www.qikqiak.com/k8s-book/docs/16.%E7%94%A8%20kubeadm%20%E6%90%AD%E5%BB%BA%E9%9B%86%E7%BE%A4%E7%8E%AF%E5%A2%83.html)做参考。
+
+下面是我的搭建之路，有点乱，在此记录下我的遇坑过程。
 
 =================================
 
