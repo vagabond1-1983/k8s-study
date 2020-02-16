@@ -5,6 +5,6 @@
 - [hook](hook/postStart.yaml)
 - [ingress](ingress)
 ## [创建一个wordpress网站](wordpress)
-## prometheus
-## grafana
-## k8s下的DevOps实战
+## [prometheus](prome)
+## [grafana](grafana)
+## [k8s下的DevOps实战](jenkins2)
