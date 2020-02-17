@@ -1,9 +1,9 @@
 node('kong-jnlp') {
-    stage('Clone') {
-        echo "1. Clone stage"
+    stage('docker info') {
+        sh "docker info"
     }
 
-    stage('Test') {
-        echo "2. Test stage"
+    stage('kubectl') {
+        sh "kubectl get no"
     }
 }
