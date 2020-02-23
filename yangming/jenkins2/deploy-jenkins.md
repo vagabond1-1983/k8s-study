@@ -86,3 +86,5 @@ openssl pkcs12 -export -out cert.pfx -inkey client.key -in client.crt -certfile 
 在凭据中添加一个证书类型的凭据，并上传cert.pfx。
 - 测试
 点击测试，通过后说明连接建立成功啦。
+
+## [jenkins安装的插件汇总](jenkins-plugins.md)
