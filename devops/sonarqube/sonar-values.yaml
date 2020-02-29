@@ -1,0 +1,13 @@
+# Using default https://github.com/helm/charts/blob/master/stable/sonarqube/values.yaml
+ingress:
+  enabled: true
+  hosts:
+    - name: sonar.kongs.info
+      path: /
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+persistence:
+  enabled: true
+  storageClass: "sonar-data"    
