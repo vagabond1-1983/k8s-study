@@ -4,10 +4,6 @@ ingress:
   hosts:
     - name: sonar.kongs.info
       path: /
-resources:
-  limits:
-    cpu: 100m
-    memory: 128Mi
 persistence:
   enabled: true
   storageClass: "sonar-data"    
