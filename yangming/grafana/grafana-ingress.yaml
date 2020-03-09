@@ -7,7 +7,7 @@ metadata:
     kubernetes.io/ingress.class: traefik
 spec:
   rules:
-  - host: prome.kongs.info
+  - host: grafana.kongs.info
     http:
       paths:
       - backend:
