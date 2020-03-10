@@ -51,12 +51,17 @@ spec:
         - name: jenkinshome
           subPath: jenkins2
           mountPath: /var/jenkins_home
+        - name: docker
+          mountPath: /var/run/docker.sock  
       securityContext:
         fsGroup: 1000
       volumes:
       - name: jenkinshome
         persistentVolumeClaim:
           claimName: opspvc
+      - name: docker
+        hostPath:
+          path: /var/run/docker.sock    
 
 ---
 apiVersion: v1

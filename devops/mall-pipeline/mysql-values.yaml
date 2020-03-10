@@ -1,0 +1,5 @@
+mysqlRootPassword: root
+persistence:
+  storageClass: mysql-data
+service:
+  type: NodePort  
